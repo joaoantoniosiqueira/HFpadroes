@@ -12,7 +12,7 @@ public class MallardDuck extends Duck{
 	}
 	
 	@Override
-	public void display() {
-		System.out.println("Eu sou um pato malhado!");
+	public String display() {
+		return("Eu sou um pato malhado!");
 	}
 }

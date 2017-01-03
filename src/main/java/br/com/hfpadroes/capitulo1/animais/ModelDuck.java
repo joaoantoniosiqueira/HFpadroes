@@ -11,8 +11,8 @@ public class ModelDuck extends Duck {
 	}
 	
 	@Override
-	public void display() {
-		System.out.println("Eu sou um modelo de pato!");
+	public String display() {
+		return("Eu sou um modelo de pato!");
 	}
 
 }

@@ -5,9 +5,9 @@ import br.com.hfpadroes.capitulo1.animais.comportamentos.QuackBehavior;
 public class Squeak implements QuackBehavior {
 
 	@Override
-	public void quack() {
+	public String quack() {
 		
-		System.out.println("zuadinha do pato de borracha!");
+		return("zuadinha do pato de borracha!");
 	}
 
 }

@@ -5,9 +5,9 @@ import br.com.hfpadroes.capitulo1.animais.comportamentos.FlyBehavior;
 public class FlyNoWay implements FlyBehavior {
 
 	@Override
-	public void fly() {
+	public String fly() {
 		
-		System.out.println("Não voa! Não sai do lugar!");
+		return("Não voa! Não sai do lugar!");
 	}
 
 }

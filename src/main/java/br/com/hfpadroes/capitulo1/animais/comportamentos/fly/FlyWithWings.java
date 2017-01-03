@@ -5,9 +5,9 @@ import br.com.hfpadroes.capitulo1.animais.comportamentos.FlyBehavior;
 public class FlyWithWings implements FlyBehavior {
 
 	@Override
-	public void fly() {
+	public String fly() {
 		
-		System.out.println("Voando com assas!");
+		return("Voando com assas!");
 	}
 
 }

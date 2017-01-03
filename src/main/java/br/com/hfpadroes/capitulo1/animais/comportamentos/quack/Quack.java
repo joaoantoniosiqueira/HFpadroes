@@ -5,9 +5,9 @@ import br.com.hfpadroes.capitulo1.animais.comportamentos.QuackBehavior;
 public class Quack implements QuackBehavior {
 
 	@Override
-	public void quack() {
+	public String quack() {
 		
-		System.out.println("Quack... Quack... Quack...");
+		return("Quack... Quack... Quack...");
 	}
 
 }

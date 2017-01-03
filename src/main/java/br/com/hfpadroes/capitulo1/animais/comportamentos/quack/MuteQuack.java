@@ -5,9 +5,9 @@ import br.com.hfpadroes.capitulo1.animais.comportamentos.QuackBehavior;
 public class MuteQuack implements QuackBehavior {
 
 	@Override
-	public void quack() {
+	public String quack() {
 		
-		System.out.println("... ... ...");
+		return("... ... ...");
 	}
 
 }
