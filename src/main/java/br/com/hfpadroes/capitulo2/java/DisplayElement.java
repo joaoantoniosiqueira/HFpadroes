@@ -1,4 +1,4 @@
-package br.com.hfpadroes.capitulo2;
+package br.com.hfpadroes.capitulo2.java;
 
 public interface DisplayElement {
 
