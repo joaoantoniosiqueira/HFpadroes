@@ -4,21 +4,29 @@ import br.com.hfpadroes.capitulo3.Beverage;
 import br.com.hfpadroes.capitulo3.CondimentDecorator;
 
 public class Soy extends CondimentDecorator {
-
-	Beverage beverege;
 	
-	public Soy(Beverage beverege) {
-		this.beverege = beverege;
+	public Soy(Beverage beverage) {
+		this.beverage = beverage;
 	}
 
 	@Override
 	public String getDescription() {
-		return beverege.getDescription() + ", Soy";
+		return beverage.getDescription() + ", Soy";
 	}
 	
 	@Override
 	public double cost() {
-		return .15 + beverege.cost();
+		double cost = beverage.cost();
+		if(beverage.getSize() == Size.TALL) {
+			cost += .10;
+		}
+		else if(beverage.getSize() == Size.GRANDE) {
+			cost += .15;
+		}
+		else if(beverage.getSize() == Size.VENTI) {
+			cost += .20;
+		}
+		return cost;
 	}
 
 }

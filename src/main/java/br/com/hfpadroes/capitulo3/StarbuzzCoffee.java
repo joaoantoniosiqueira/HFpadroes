@@ -1,5 +1,6 @@
 package br.com.hfpadroes.capitulo3;
 
+import br.com.hfpadroes.capitulo3.Beverage.Size;
 import br.com.hfpadroes.capitulo3.bebidas.DarkRoast;
 import br.com.hfpadroes.capitulo3.bebidas.Expresso;
 import br.com.hfpadroes.capitulo3.bebidas.HouseBlend;
@@ -22,6 +23,7 @@ public class StarbuzzCoffee {
 		System.out.println(darkRoast.getDescription() + " $" + darkRoast.cost());
 		
 		Beverage houseBlend = new HouseBlend();
+		houseBlend.setSize(Size.VENTI);
 		houseBlend = new Soy(houseBlend);
 		houseBlend = new Mocha(houseBlend);
 		houseBlend = new Whip(houseBlend);
